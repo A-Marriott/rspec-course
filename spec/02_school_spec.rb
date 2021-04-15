@@ -1,4 +1,4 @@
-require 'school'
+require '02_school'
 
 RSpec.describe School do
   it 'has a name' do

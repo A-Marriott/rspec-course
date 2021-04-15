@@ -1,4 +1,4 @@
-require 'card'
+require '01_card'
 
 RSpec.describe Card do
   let(:card) { Card.new('Ace', 'Spades') }
