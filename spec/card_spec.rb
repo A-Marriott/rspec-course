@@ -8,6 +8,6 @@ RSpec.describe Card do
   end
 
   it 'has a value' do
-    expect(card.value).to eq('Ace')
+    expect(card.value).to eq('Ace'), "expected #{card.value} to equal Ace"
   end
 end
