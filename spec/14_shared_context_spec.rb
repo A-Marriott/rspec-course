@@ -17,3 +17,4 @@ describe 'first example group' do
     expect(@food).to eq([])
   end
 end
+

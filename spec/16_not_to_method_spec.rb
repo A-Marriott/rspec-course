@@ -1,0 +1,7 @@
+describe 'not to method' do
+  it 'checks that two values do not match' do
+    expect(5).not_to eq(6)
+  end
+end
+
+# not to can be used before any matcher
