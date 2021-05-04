@@ -33,6 +33,7 @@ class Movie
       actor.act
       actor.fall_off_ladder
       actor.light_on_fire
+      actor.act
     end
   end
 end
@@ -52,6 +53,11 @@ describe Movie do
 
   describe '#start_shotting' do
     it 'expects an actor to do 3 actions' do
+      expect(stuntman).to receive(:ready?).once
+      expect(stuntman).to receive(:act).exactly(2).times
+      expect(stuntman).to receive(:fall_off_ladder).at_least(1).times
+      expect(stuntman).to receive(:light_on_fire).at_most(1).times
+
       subject.start_shooting
     end
   end
